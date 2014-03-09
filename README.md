@@ -66,6 +66,12 @@ Chatter hides the nickname for repeated subsequent messages from the same author
 
 This is based on a feature in [Skylight](https://github.com/mintchaos/Skylight).
 
+## Fixed Width Nickname Gutter
+
+Chatter has a fixed width area for nicknames, which is much better for reading chats, in my opinion.  If nicknames are too long to fit, they are chopped with an ellipsis.
+
+This is based on a feature in [Skylight](https://github.com/mintchaos/Skylight).
+
 ## Copyright and Legal
 
 Chatter for Textual is copyright (c) 2013 - 2014 by Joseph Huckaby and PixlCore.com.  It is released under the MIT License (see below).
@@ -75,8 +81,7 @@ Note that this software ships with some bundled 3rd party software libraries:
 > Contains a bundled copy of jQuery:
 > http://jquery.org/license
 
-> Also contains:
-> https://gist.github.com/andrei-m/982927
+> Also contains: [levenshtein.js](https://gist.github.com/andrei-m/982927)
 > Copyright (c) 2011 Andrei Mackenzie, MIT Licensed
 
 ### MIT License
