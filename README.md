@@ -86,11 +86,8 @@ Chatter for Textual is copyright (c) 2013 - 2014 by Joseph Huckaby and PixlCore.
 
 Note that this software ships with some bundled 3rd party software libraries:
 
-> Contains a bundled copy of jQuery:
-> http://jquery.org/license
-
-> Also contains: [levenshtein.js](https://gist.github.com/andrei-m/982927)
-> Copyright (c) 2011 Andrei Mackenzie, MIT Licensed
+* Contains a bundled copy of jQuery: http://jquery.org/license
+* Also contains: [levenshtein.js](https://gist.github.com/andrei-m/982927), (c) 2011 Andrei Mackenzie, MIT Licensed
 
 ### MIT License
 
