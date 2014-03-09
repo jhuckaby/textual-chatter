@@ -1,0 +1,36 @@
+#!/usr/bin/perl
+
+use strict;
+
+# ENV dump example from inside this script:
+#
+# 'HOME' => '/Users/jhuckaby',
+# 'SCRIPT_NAME' => 'postinstall',
+# 'COMMAND_MODE' => 'unix2003',
+# 'VERSIONER_PERL_PREFER_32_BIT' => 'no',
+# 'SHARED_INSTALLER_TEMP' => '/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/Cleanup At Startup/PKInstallSandboxManager-shared-tmp',
+# 'DSTVOLUME' => '/',
+# 'PACKAGE_PATH' => '/Users/jhuckaby/Desktop/TextualIRCAdditions.pkg',
+# 'USER' => 'jhuckaby',
+# 'INSTALLER_TEMP' => '/private/tmp/PKInstallSandbox.mBaorC/tmp',
+# '__CF_USER_TEXT_ENCODING' => '0x0:0:0',
+# 'INSTALL_PKG_SESSION_ID' => 'net.admission.irc.textual',
+# 'PATH' => '/bin:/sbin:/usr/bin:/usr/sbin:/usr/libexec',
+# 'INSTALLER_SECURE_TEMP' => '/var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/Cleanup At Startup/PKInstallSandboxManager/1.sandbox/Secure_Temp.352051390',
+# 'DSTROOT' => '/opt/Textual',
+# 'TMPDIR' => '/private/tmp/PKInstallSandbox.mBaorC/tmp',
+# 'VERSIONER_PERL_VERSION' => '5.12'
+
+my $username = $ENV{'USER'};
+my $home_dir = $ENV{'HOME'};
+my $pkg_dir = $ENV{'DSTROOT'};
+
+# copy theme
+my $dest_theme_dir = $home_dir . "/Library/Containers/com.codeux.irc.textual/Data/Library/Application\\ Support/Textual\\ IRC/Styles";
+`mkdir -p $dest_theme_dir`;
+`chown -R $username:staff $pkg_dir/Chatter`;
+`cp -a $pkg_dir/Chatter $dest_theme_dir/`;
+
+exit(0);
+
+1;
