@@ -12,6 +12,14 @@ http://pixlcore.com/software/textual-chatter/TextualChatterInstaller.pkg
 
 Then select it as your active theme (style) by going to Textual Preferences → Style.
 
+## Open Source
+
+Chatter is open source, MIT licensed, and available on GitHub:
+
+https://github.com/jhuckaby/textual-chatter
+
+# Features
+
 ## Auto Light and Dark Mode Switching
 
 Chatter will automatically switch its color scheme from light to dark based on the "Darken main window colors" setting, found in Textual Preferences → Interface → General:
