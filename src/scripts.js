@@ -9791,10 +9791,10 @@ if ( typeof module === "object" && module && typeof module.exports === "object" 
 // END OF JQUERY
 
 // BEGIN CUSTOM THEME CODE:
-// Copyright (c) 2013 Joseph Huckaby, MIT License.
+// Copyright (c) 2013, 2014 Joseph Huckaby, MIT License.
 // Except where otherwise noted.
 
-var soundNames = [ /* 'applause', 'bless', 'crickets', 'rimshot', 'smack', 'snapshot', 'beep', 'cat', 'dog', 'goat', 'pig', 'fish', 'alert' */];
+var soundNames = [ 'applause', 'bless', 'crickets', 'rimshot', 'smack', 'snapshot', 'beep', 'cat', 'dog', 'goat', 'pig', 'fish', 'alert' ];
 var soundMap = {};
 
 var emojiMap = {
@@ -9824,11 +9824,11 @@ var emojiMap = {
 	'&#x1f420;': '(fishy)'
 };
 var emojiSounds = {
-	/* '&#x1f431;': 'cat',
+	'&#x1f431;': 'cat',
 	'&#x1f436;': 'dog',
 	'&#x1f410;': 'goat',
 	'&#x1f437;': 'pig',
-	'&#x1f420;': 'fish' */
+	'&#x1f420;': 'fish'
 };
 var emojiRegExps = [];
 
@@ -9896,7 +9896,7 @@ Textual.newMessagePostedToView = function(linenum) {
 	
 	var sender = row.find('.sender');
 	var message = row.find('.message');
-	var nick = sender.attr('nick');
+	var nick = sender.attr('nickname');
 	var time = row.find('.time');
 	var epoch = row.attr('time');
 	
@@ -9925,7 +9925,7 @@ Textual.newMessagePostedToView = function(linenum) {
 	if (prev.length) {
 		var prev_sender = prev.find('.sender');
 		var prev_message = prev.find('.message');
-		if (prev_sender.length && (prev_sender.attr('nick') == nick) && !nick.match(/notify$/i) && prev_message.length && (prev_message.attr('type') == message.attr('type')) && (message.attr('type').match(/(privmsg|notice)/))) {
+		if (prev_sender.length && (prev_sender.attr('nickname') == nick) && !nick.match(/notify$/i) && prev_message.length && (prev_message.attr('ltype') == message.attr('ltype')) && (message.attr('ltype').match(/(privmsg|notice)/))) {
 			sender.css({ visibility: 'hidden' });
 			row.addClass('repeating_author');
 		}
@@ -9965,7 +9965,7 @@ Textual.newMessagePostedToView = function(linenum) {
 		// auto-append if single character in length, and immediately previous msg is ours
 		var prev_sender = prev.find('.sender');
 		var prev_message = prev.find('.message');
-		if (prev_sender.length && (prev_sender.attr('nick') == nick) && !nick.match(/notify$/i) && prev_message.length && (prev_message.attr('type') == message.attr('type')) && (message.attr('type').match(/(privmsg|notice)/))) {
+		if (prev_sender.length && (prev_sender.attr('nickname') == nick) && !nick.match(/notify$/i) && prev_message.length && (prev_message.attr('ltype') == message.attr('ltype')) && (message.attr('ltype').match(/(privmsg|notice)/))) {
 			html = doAppendToPrevious(html, row, sender, message, nick);
 		}
 	}
@@ -10023,7 +10023,7 @@ function doRegExpCorrect(html, row, sender, message, nick) {
 			if (prev.length) {
 				var prev_sender = prev.find('.sender');
 				var prev_message = prev.find('.message');
-				if (!prev.data('hfc') && prev_sender.length && (prev_sender.attr('nick') == nick) && prev_message.length && (prev_message.attr('type') == message.attr('type')) && (message.attr('type').match(/(privmsg)/))) {
+				if (!prev.data('hfc') && prev_sender.length && (prev_sender.attr('nickname') == nick) && prev_message.length && (prev_message.attr('ltype') == message.attr('ltype')) && (message.attr('ltype').match(/(privmsg)/))) {
 					// found potential row, search for string
 					var prev_content = prev_message.find('.message_content');
 					var prev_html = html_to_text( trim( prev_content.html() ) );
@@ -10059,7 +10059,7 @@ function doAppendToPrevious(html, row, sender, message, nick) {
 		if (prev.length) {
 			var prev_sender = prev.find('.sender');
 			var prev_message = prev.find('.message');
-			if (!prev.data('hfc') && prev_sender.length && (prev_sender.attr('nick') == nick) && prev_message.length && (prev_message.attr('type') == message.attr('type')) && (message.attr('type').match(/(privmsg)/))) {
+			if (!prev.data('hfc') && prev_sender.length && (prev_sender.attr('nickname') == nick) && prev_message.length && (prev_message.attr('ltype') == message.attr('ltype')) && (message.attr('ltype').match(/(privmsg)/))) {
 				// found it, append and hide current row
 				var prev_content = prev_message.find('.message_content');
 				var prev_html = trim( prev_content.html() );
@@ -10103,7 +10103,7 @@ function doSmartCorrect(html, row, sender, message, nick) {
 		if (prev.length) {
 			var prev_sender = prev.find('.sender');
 			var prev_message = prev.find('.message');
-			if (!prev.data('hfc') && prev_sender.length && (prev_sender.attr('nick') == nick) && prev_message.length && (prev_message.attr('type') == message.attr('type')) && (message.attr('type').match(/(privmsg)/))) {
+			if (!prev.data('hfc') && prev_sender.length && (prev_sender.attr('nickname') == nick) && prev_message.length && (prev_message.attr('ltype') == message.attr('ltype')) && (message.attr('ltype').match(/(privmsg)/))) {
 				pots.push( prev );
 				if (pots.length >= 5) tries = 0;
 			}

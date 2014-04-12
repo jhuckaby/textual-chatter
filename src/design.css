@@ -165,14 +165,14 @@ div[id=mark] {
 
 /* Nickname Colors */
 
-body div[type=privmsg] .sender[type=myself],
-body div[type=action] .sender[type=myself] { 
+body div[ltype=privmsg] .sender[mtype=myself],
+body div[ltype=action] .sender[mtype=myself] { 
   color: #9C00AA; 
 }
 
 body div#body_home p { margin-left: 11em !important; margin-right: 8em; }
 
-body .sender[type=normal], body .sender[type=myself] { 
+body .sender[mtype=normal], body .sender[mtype=myself] { 
   margin-left: -11em; 
   float: left; 
   width: 10.5em;
@@ -195,81 +195,81 @@ body .sender[type=normal], body .sender[type=myself] {
   cursor: default;
 }
 
-.repeating_author .sender[type=normal], .repeating_author .sender[type=myself] {
+.repeating_author .sender[mtype=normal], .repeating_author .sender[mtype=myself] {
   visibility: hidden;
 }
 
-body .sender[type=normal][colornumber='0'] { color: #888; }
-body .sender[type=normal][colornumber='1'] { color: #2EA700; }
-body .sender[type=normal][colornumber='2'] { color: #AC005C; }
-body .sender[type=normal][colornumber='3'] { color: #9D00C9; }
-body .sender[type=normal][colornumber='4'] { color: #499C00; }
-body .sender[type=normal][colornumber='5'] { color: #7F4FFF; }
-body .sender[type=normal][colornumber='6'] { color: #8BC100; }
-body .sender[type=normal][colornumber='7'] { color: #7200CD; }
-body .sender[type=normal][colornumber='8'] { color: #970007; }
-body .sender[type=normal][colornumber='9'] { color: #1238B8; }
-body .sender[type=normal][colornumber='10'] { color: #136666; }
-body .sender[type=normal][colornumber='11'] { color: #904000; }
-body .sender[type=normal][colornumber='12'] { color: #808000; }
-body .sender[type=normal][colornumber='13'] { color: #2092AE; }
-body .sender[type=normal][colornumber='14'] { color: #1909AF; }
-body .sender[type=normal][colornumber='15'] { color: #985D00; }
+body .sender[mtype=normal][colornumber='0'] { color: #888; }
+body .sender[mtype=normal][colornumber='1'] { color: #2EA700; }
+body .sender[mtype=normal][colornumber='2'] { color: #AC005C; }
+body .sender[mtype=normal][colornumber='3'] { color: #9D00C9; }
+body .sender[mtype=normal][colornumber='4'] { color: #499C00; }
+body .sender[mtype=normal][colornumber='5'] { color: #7F4FFF; }
+body .sender[mtype=normal][colornumber='6'] { color: #8BC100; }
+body .sender[mtype=normal][colornumber='7'] { color: #7200CD; }
+body .sender[mtype=normal][colornumber='8'] { color: #970007; }
+body .sender[mtype=normal][colornumber='9'] { color: #1238B8; }
+body .sender[mtype=normal][colornumber='10'] { color: #136666; }
+body .sender[mtype=normal][colornumber='11'] { color: #904000; }
+body .sender[mtype=normal][colornumber='12'] { color: #808000; }
+body .sender[mtype=normal][colornumber='13'] { color: #2092AE; }
+body .sender[mtype=normal][colornumber='14'] { color: #1909AF; }
+body .sender[mtype=normal][colornumber='15'] { color: #985D00; }
 
 
 /* NOTICE/CTCP/WALLOPS */
 
-body div[type=notice],
-body div[type=ctcp],
-body div[type=wallops] {
+body div[ltype=notice],
+body div[ltype=ctcp],
+body div[ltype=wallops] {
 	color: #f00;
   	z-index: 191;
   	position: relative;
     padding-left: 5px;
 }
-body div[type=notice] .message,
-body div[type=ctcp] .message,
-body div[type=wallops] .message {
+body div[ltype=notice] .message,
+body div[ltype=ctcp] .message,
+body div[ltype=wallops] .message {
   /* padding: 2px 5px 2px 5px; */
 /*  border: 1px solid #FA9B9D;*/
 }
-body div[type=notice],
-body div[type=ctcp],
-body div[type=wallops] {
+body div[ltype=notice],
+body div[ltype=ctcp],
+body div[ltype=wallops] {
   background: #FDE3E3;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-right: 5px;
 }
 
-body div[type=notice] .sender {
+body div[ltype=notice] .sender {
 	color: #f00;
 	font-weight: 700;
 }
 
 /* PRIVMSG */
 
-body div[type=privmsg][highlight=false]  {
+body div[ltype=privmsg][highlight=false]  {
  	padding: 4px 5px 2px 5px;
 }
-body div.repeating_author[type=privmsg][highlight=false]  {
+body div.repeating_author[ltype=privmsg][highlight=false]  {
  padding-top: 0;
  padding-bottom: 2px;
 }
-body div.repeating_author[type=notice] {
+body div.repeating_author[ltype=notice] {
  padding-top: 0;
  padding-bottom: 2px;
 }
 
-body div[type=privmsg][highlight=true],
-body div[type=action][highlight=true] {
+body div[ltype=privmsg][highlight=true],
+body div[ltype=action][highlight=true] {
 	font-weight: normal;
  	padding: 2px 5px 1px 5px;
 	background-color: rgba(255, 255, 190, 1) !important;
 }
 
-body div[type=privmsg][highlight=true] .message,
-body div[type=action][highlight=true] .message {
+body div[ltype=privmsg][highlight=true] .message,
+body div[ltype=action][highlight=true] .message {
 	color: black;  
 }
 
@@ -280,20 +280,20 @@ body div[type=action][highlight=true] .message {
   border-top: 1px solid rgba(220, 210, 255, 0.6); 
 } */
 
-body div div[type=privmsg].temphightlight,
-body div div[type=action].temphightlight {
+body div div[ltype=privmsg].temphightlight,
+body div div[ltype=action].temphightlight {
   background: #FFF9D8 !important;
 }
-body div div[type=privmsg][highlight=true].temphightlight,
-body div div[type=action][highlight=true].temphightlight {
+body div div[ltype=privmsg][highlight=true].temphightlight,
+body div div[ltype=action][highlight=true].temphightlight {
   background: #F8EE9C !important;
 }
 
-body div[type=privmsg] .message {
+body div[ltype=privmsg] .message {
 	color: #444;
 }
 
-body div[type=privmsg] .sender {
+body div[ltype=privmsg] .sender {
 	font-weight: 700;
 }
 
@@ -305,7 +305,7 @@ span.message_content.scream {
 
 /* ACTION */
 
-body div[type=action]  {
+body div[ltype=action]  {
   /* background: #f4f4f4;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee; */
@@ -314,48 +314,48 @@ body div[type=action]  {
   margin-left: -5em;
 }
 
-body div[type=action] .message {
+body div[ltype=action] .message {
   color: #888 !important;
 }
 
-body div[type=action] .sender {
+body div[ltype=action] .sender {
   float: none !important;
   margin-left: 0;
 	font-weight: 700;
   color: #888 !important;
 }
 
-body div div[type="privmsg"] p[type=myself] .message, 
-body div[type=action] p[type=myself] .message {
+body div div[ltype="privmsg"][mtype=myself] .message, 
+body div[ltype=action][mtype=myself] .message {
 	color: #5B5463;
 }
 
-body div[type=action] .sender:before {
+body div[ltype=action] .sender:before {
 	content: "»";
 	margin-right: 0.4em;
 }
 
-body div[type=action] .sender:after {
+body div[ltype=action] .sender:after {
 	content: "";
 }
 
-body div[type=action] .message_content {
+body div[ltype=action] .message_content {
   padding-left: 4px;
 }
 
 /* REPLY/SYSTEM/ERROR/DCC/DEBUG/INVITE */
 
-body div[type=invite],
-body div[type=reply],
-body div[type=system],
-body div[type=error],
-body div[type=error_reply],
-body div[type=dcc_send_send],
-body div[type=dcc_send_receive],
-body div[type=debug_send],
-body div[type=debug],
-body div[type=website],
-body div[type=debug_receive] {
+body div[ltype=invite],
+body div[ltype=reply],
+body div[ltype=system],
+body div[ltype=error],
+body div[ltype=error_reply],
+body div[ltype=dcc_send_send],
+body div[ltype=dcc_send_receive],
+body div[ltype=debug_send],
+body div[ltype=debug],
+body div[ltype=website],
+body div[ltype=debug_receive] {
 	color: #777;
   	z-index: 190;
 	background: #eee;
@@ -364,7 +364,7 @@ body div[type=debug_receive] {
 	border-top: 1px solid #ddd;
 	border-bottom: 1px solid #ddd;
 }
-body div[type=website] {
+body div[ltype=website] {
   background: #fff !important;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
@@ -372,63 +372,63 @@ body div[type=website] {
 
 /* GENERAL EVENT */
 
-body div[type=join],
-body div[type=part],
-body div[type=kick],
-body div[type=quit],
-body div[type=kill],
-body div[type=nick],
-body div[type=mode],
-body div[type=website],
-body div[type=topic] {
+body div[ltype=join],
+body div[ltype=part],
+body div[ltype=kick],
+body div[ltype=quit],
+body div[ltype=kill],
+body div[ltype=nick],
+body div[ltype=mode],
+body div[ltype=website],
+body div[ltype=topic] {
   padding: 2px 5px 2px 5px;
     color: #aaa;
 }
 
-body div[type=invite] .message,
-body div[type=reply] .message,
-body div[type=system] .message,
-body div[type=error] .message,
-body div[type=error_reply] .message,
-body div[type=dcc_send_send] .message,
-body div[type=dcc_send_receive] .message,
-body div[type=debug_send] .message,
-body div[type=debug] .message,
-body div[type=website] .message,
-body div[type=debug_receive] .message,
-body div[type=join] .message,
-body div[type=part] .message,
-body div[type=kick] .message,
-body div[type=quit] .message,
-body div[type=kill] .message,
-body div[type=nick] .message,
-body div[type=mode] .message,
-body div[type=topic] .message {
+body div[ltype=invite] .message,
+body div[ltype=reply] .message,
+body div[ltype=system] .message,
+body div[ltype=error] .message,
+body div[ltype=error_reply] .message,
+body div[ltype=dcc_send_send] .message,
+body div[ltype=dcc_send_receive] .message,
+body div[ltype=debug_send] .message,
+body div[ltype=debug] .message,
+body div[ltype=website] .message,
+body div[ltype=debug_receive] .message,
+body div[ltype=join] .message,
+body div[ltype=part] .message,
+body div[ltype=kick] .message,
+body div[ltype=quit] .message,
+body div[ltype=kill] .message,
+body div[ltype=nick] .message,
+body div[ltype=mode] .message,
+body div[ltype=topic] .message {
   margin-left: -11em !important;
   font-size: 11px;
   display: block;
 }
 
-body div[type=join] .message b, body div[type=part] .message b, body div[type=quit] .message b {
+body div[ltype=join] .message b, body div[ltype=part] .message b, body div[ltype=quit] .message b {
   font-weight: normal !important;
 }
 
 
-body div[type=join] .message:before {
+body div[ltype=join] .message:before {
 	content: "→";
   	color: #0c0;
   	margin-right: 3px;
 }
 
-body div[type=kick] .message:before,
-body div[type=part] .message:before,
-body div[type=quit] .message:before {
+body div[ltype=kick] .message:before,
+body div[ltype=part] .message:before,
+body div[ltype=quit] .message:before {
 	content: "←";
   	color: #e00;
   	margin-right: 3px;
 }
 
-body div[type=nick] .message:before {
+body div[ltype=nick] .message:before {
 	content:"•";
   	color: #0c0;
   	margin-right: 3px;

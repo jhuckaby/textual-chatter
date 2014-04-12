@@ -1,0 +1,18 @@
+Chatter is a Textual IRC theme (style) with a fixed width nickname gutter, smart time stamps, automatic light/dark mode switching, Emoji emotes and an auto-correction mechanism.  Requires [Textual for OS X](http://www.codeux.com/textual/) which is available on the [Mac App Store](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12).  It is based on the [Skylight](https://github.com/mintchaos/Skylight) theme.
+
+## Copyright and Legal
+
+Chatter for Textual is copyright (c) 2013 - 2014 by Joseph Huckaby and PixlCore.com.  It is released under the MIT License (see below).
+
+Note that this software ships with some bundled 3rd party software libraries:
+
+* Contains a bundled copy of jQuery: http://jquery.org/license
+* Also contains: [levenshtein.js](https://gist.github.com/andrei-m/982927), (c) 2011 Andrei Mackenzie, MIT Licensed
+
+### MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
