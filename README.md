@@ -1,6 +1,6 @@
 # Chatter for Textual
 
-Chatter is a Textual IRC theme (style) with a fixed width nickname gutter, smart time stamps, automatic light/dark mode switching, Emoji emotes and an auto-correction mechanism.  Requires [Textual for OS X](http://www.codeux.com/textual/) which is available on the [Mac App Store](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12).  It is based on the [Skylight](https://github.com/mintchaos/Skylight) theme.
+Chatter is a Textual IRC theme (style) with a fixed width nickname gutter, smart time stamps, automatic light/dark mode switching, Emoji emotes and an auto-correction mechanism.  Requires [Textual for OS X](http://www.codeux.com/textual/) which is available on the [Mac App Store](https://itunes.apple.com/us/app/textual-irc-client/id403012667?mt=12).  It is based on the [Skylight](https://github.com/mintchaos/Skylight) theme, but has been updated to Textual Style V2 format, for supporting Textual v4.1.4 and up.
 
 Here are some screenshots:
 
