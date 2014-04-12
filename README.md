@@ -8,7 +8,7 @@ Here are some screenshots:
 
 You can install Chatter by downloading and running the `.pkg` file:
 
-http://pixlcore.com/software/textual-chatter/TextualChatterInstaller.pkg
+http://pixlcore.com/software/textual-chatter/TextualChatterInstaller-1.0.1.pkg
 
 Then select it as your active theme (style) by going to Textual Preferences → Style.
 
